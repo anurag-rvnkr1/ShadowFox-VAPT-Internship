@@ -1232,13 +1232,6 @@ The download completed successfully.
 
 The file was stored locally for analysis.
 
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 18.2 — Downloading `staff.txt`**
-
-> Insert screenshot showing successful execution of the `get` command.
 
 ---
 
@@ -1515,13 +1508,7 @@ This makes it effective for evaluating password policy weaknesses.
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 25.1 — Hydra Dictionary Attack Execution**
-
-> Insert screenshot showing the Hydra command executing against `10.10.43.214`.
-
----
 
 # 26. Hydra Attack Results
 
@@ -1719,13 +1706,6 @@ No administrative privileges were immediately available.
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 28.2 — User Identity Information**
-
-> Insert screenshot showing output of `id`.
-
----
 
 # 29. Enumerating Linux User Accounts
 
@@ -2101,13 +2081,6 @@ The command displayed the current directory associated with the authenticated us
 
 This confirms that the SSH session started inside the home directory of `jan`.
 
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 36.1 — Current Working Directory**
-
-> Insert screenshot showing the output of `pwd`.
 
 ---
 
@@ -2150,13 +2123,6 @@ No obvious privilege escalation vector existed inside the current user's home di
 
 The investigation therefore shifted toward another user's directory.
 
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 36.2 — Listing Hidden Files in User Home Directory**
-
-> Insert screenshot showing `ls -la` output.
 
 ---
 
@@ -2197,13 +2163,7 @@ This meant metadata could still be inspected.
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 37.1 — Navigating to `/home/kay`**
-
-> Insert screenshot showing successful directory change.
-
----
 
 # 38. Enumerating Files Inside `/home/kay`
 
@@ -2363,13 +2323,6 @@ The exposure of another user's private key indicates improper permission managem
 
 Even if encrypted, attackers can perform offline attacks against the passphrase.
 
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 41.1 — File Permissions of SSH Keys**
-
-> Insert screenshot highlighting `id_rsa`.
 
 ---
 
@@ -2471,13 +2424,6 @@ Setting the permission to `400` ensures:
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 43.2 — Restricting Private Key Permissions**
-
-> Insert screenshot showing successful execution of `chmod 400 bp`.
-
----
 
 # 44. Verifying the Local Key File
 
@@ -2499,13 +2445,6 @@ The key was now properly prepared for offline processing.
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 44.1 — Verification of Local Private Key Permissions**
-
-> Insert screenshot showing the permission output for `bp`.
-
----
 
 # 45. Privilege Escalation Analysis
 
@@ -2645,13 +2584,7 @@ This confirmed that:
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 48.1 — Verification of Local SSH Private Key**
-
-> Insert screenshot showing `ls -l bp`.
-
----
 
 ## 48.2 Inspecting the Key Header
 
@@ -2678,14 +2611,6 @@ The header confirmed:
 * Compatible with `ssh2john.py`.
 
 For security reasons, only the header should be documented in GitHub rather than the complete key contents.
-
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 48.2 — OpenSSH Private Key Header**
-
-> Insert screenshot showing only the first few lines of the key.
 
 ---
 
@@ -2797,13 +2722,7 @@ This hash contained the encrypted information John needed to recover the passphr
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 50.2 — Generated Hash File**
-
-> Insert screenshot showing the generated hash (avoid exposing the complete hash if publishing publicly).
-
----
 
 # 51. Password Cracking with John the Ripper
 
@@ -2861,13 +2780,6 @@ Using the same dictionary allows testing whether the SSH passphrase is also weak
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 52.1 — John the Ripper Dictionary Attack**
-
-> Insert screenshot showing John beginning the cracking process.
-
----
 
 # 53. John the Ripper Results
 
@@ -2929,13 +2841,6 @@ This verified that the cracking process completed successfully and the passphras
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 53.2 — Displaying Cracked Passphrase**
-
-> Insert screenshot showing the output of `john --show`.
-
----
 
 # 54. Authenticating as the User `kay`
 
@@ -3020,13 +2925,8 @@ The active shell now had the permissions assigned to `kay`, allowing access to f
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 55.1 — Verifying Current User (`kay`)**
 
-> Insert screenshot showing `whoami`.
-
----
 
 ## 55.2 Confirm User Identity
 
@@ -3050,13 +2950,6 @@ This verified that authentication occurred through the recovered SSH key rather 
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 55.2 — User Identity After Privilege Escalation**
-
-> Insert screenshot showing `id`.
-
----
 
 # 56. Why This Was Considered Privilege Escalation
 
@@ -3234,13 +3127,7 @@ This verification is an important penetration testing practice before attempting
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 61.1 — Verifying Current User as `kay`**
-
-> Insert screenshot showing the output of `whoami`.
-
----
 
 ## 61.2 Confirm User Identity and Groups
 
@@ -3269,13 +3156,6 @@ The session was authenticated through SSH key authentication rather than the ori
 
 ---
 
-### 📷 Screenshot Placeholder
-
-**Figure 61.2 — Identity Information of User `kay`**
-
-> Insert screenshot showing the output of `id`.
-
----
 
 # 62. Accessing the Previously Restricted File
 
@@ -3299,13 +3179,7 @@ The file contents became readable under the `kay` account.
 
 ---
 
-### 📷 Screenshot Placeholder
 
-**Figure 62.1 — Successfully Reading `pass.bak`**
-
-> Insert screenshot showing successful execution of `cat pass.bak`.
-
----
 
 ## 62.2 Comparison with Previous Attempt
 
