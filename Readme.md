@@ -160,7 +160,7 @@ ip a
 ping <TARGET_IP>
 ```
 
-📷 Screenshot: `screenshots/01-openvpn.png`
+
 
 ---
 
@@ -191,7 +191,7 @@ nmap -sV -A <TARGET_IP>
 
 The scan identified multiple exposed services that became potential attack vectors during later stages of the assessment.
 
-📷 Screenshot: `screenshots/02-nmap-scan.png`
+
 
 ---
 
@@ -229,7 +229,7 @@ These files contained developer notes and user-related hints useful during enume
 
 Developer files exposed internal information that should never be publicly accessible.
 
-📷 Screenshot: `screenshots/03-development-directory.png`
+
 
 ---
 
@@ -267,10 +267,6 @@ Valid usernames discovered:
 
 Anonymous SMB shares exposed sensitive internal user information.
 
-📷 Screenshots
-
-* `screenshots/04-enum4linux.png`
-* `screenshots/05-smbclient.png`
 
 ---
 
@@ -296,7 +292,6 @@ Valid SSH credentials obtained for the user `jan`.
 
 The target used a weak password vulnerable to dictionary attacks.
 
-📷 Screenshot: `screenshots/06-hydra-success.png`
 
 ---
 
@@ -321,7 +316,6 @@ ssh jan@<TARGET_IP>
 
 Discovered another user account named `kay`.
 
-📷 Screenshot: `screenshots/07-ssh-login.png`
 
 ---
 
@@ -350,7 +344,6 @@ Located inside `/home/kay`:
 
 Sensitive authentication material was exposed due to improper permissions.
 
-📷 Screenshot: `screenshots/08-linux-enumeration.png`
 
 ---
 
@@ -378,7 +371,6 @@ python3 ssh2john.py bp > hash.txt
 
 Generated a password hash compatible with John the Ripper.
 
-📷 Screenshot: `screenshots/09-ssh2john.png`
 
 ---
 
@@ -404,7 +396,7 @@ Recovered the encrypted SSH key passphrase using a dictionary attack.
 
 Weak SSH key passphrases significantly reduce the effectiveness of key-based authentication.
 
-📷 Screenshot: `screenshots/10-john-crack.png`
+
 
 ---
 
@@ -428,7 +420,7 @@ ssh -i bp kay@<TARGET_IP>
 
 Successfully escalated privileges and completed the assessment objectives.
 
-📷 Screenshot: `screenshots/11-ssh-kay.png`
+
 
 ---
 
