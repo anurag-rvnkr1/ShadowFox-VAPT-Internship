@@ -146,7 +146,7 @@ Successful connection was confirmed by the message:
 
 **Figure 2.1 — Successful OpenVPN Connection**
 
-> *Insert screenshot showing the OpenVPN terminal with "Initialization Sequence Completed".*
+![Figure 2.1 — Successful OpenVPN Connection](../Screenshots/01-Successful%20OpenVPN%20Connection.jpg)
 
 ---
 
@@ -180,7 +180,7 @@ Without this interface, the target machine would not be reachable.
 
 **Figure 2.2 — tun0 Interface Verification**
 
-> *Insert screenshot showing output of `ip a` highlighting the `tun0` interface.*
+![Figure 2.2 — tun0 Interface Verification](../Screenshots/02-tun0%20Interface%20Verification.png)
 
 ---
 
@@ -218,7 +218,7 @@ This completed the environment setup phase.
 
 **Figure 2.3 — Successful Ping to Target Machine**
 
-> *Insert screenshot showing ICMP replies from `10.10.43.214`.*
+![Figure 2.3 — Successful Ping to Target Machine](../Screenshots/03-Successful%20Ping%20to%20Target%20Machine.png)
 
 ---
 
@@ -294,7 +294,7 @@ This helps identify:
 
 **Figure 3.1 — Nmap Aggressive Scan Output**
 
-> *Insert screenshot of the complete Nmap output.*
+![Figure 3.1 — Nmap Aggressive Scan Output](../Screenshots/04-Nmap%20Aggressive%20Scan%20Output.png)
 
 ---
 
@@ -409,7 +409,7 @@ Knowing the operating system helps determine:
 
 **Figure 3.2 — Open Services Identified by Nmap**
 
-> *Insert screenshot highlighting ports 22, 80, 139, and 445.*
+![Figure 3.2 — Open Services Identified by Nmap](../Screenshots/05-Open%20Services%20Identified%20by%20Nmap.jpg)
 
 ---
 
@@ -524,7 +524,7 @@ The absence of visible functionality suggested that further directory enumeratio
 
 **Figure 7.1 — Homepage of Target Web Application**
 
-> Insert a screenshot showing the default Apache maintenance webpage hosted on `10.10.43.214`.
+![Figure 7.1 — Homepage of Target Web Application](../Screenshots/06-Homepage%20of%20Target%20Web%20Application.png)
 
 ---
 
@@ -592,7 +592,7 @@ This approach was sufficient for initial web reconnaissance before performing de
 
 **Figure 8.1 — Nmap HTTP Enumeration Scan**
 
-> Insert screenshot of the `http-enum` scan output.
+![Figure 8.1 — Nmap HTTP Enumeration Scan](../Screenshots/07-Nmap%20HTTP%20Enumeration%20Scan.png)
 
 ---
 
@@ -638,7 +638,7 @@ This increases the reconnaissance surface significantly.
 
 **Figure 8.2 — Hidden `/development` Directory Identified**
 
-> Insert screenshot showing the `/development` directory discovered by Nmap.
+![Figure 8.2 — Hidden Development Directory Identified](../Screenshots/08-Hidden%20Directory%20Identified.jpg)
 
 ---
 
@@ -669,7 +669,7 @@ The directory contained two files.
 
 **Figure 9.1 — Directory Listing of `/development`**
 
-> Insert screenshot showing both files listed inside the development directory.
+![Figure 9.1 — Directory Listing of Development](../Screenshots/09-Directory%20Listing%20of%20development.png)
 
 ---
 
@@ -708,7 +708,7 @@ The file was opened directly from the browser.
 
 **Figure 10.1 — Contents of `dev.txt`**
 
-> Insert screenshot of the `dev.txt` contents.
+![Figure 10.1 — Contents of dev.txt](../Screenshots/10-Contents%20of%20dev.txt.png)
 
 ---
 
@@ -779,7 +779,7 @@ The file was opened directly through the browser.
 
 **Figure 11.1 — Contents of `j.txt`**
 
-> Insert screenshot showing the text inside `j.txt`.
+![Figure 11.1 — Contents of j.txt](../Screenshots/11-Contents%20of%20j.txt.png)
 
 ---
 
@@ -991,7 +991,7 @@ This saves time during reconnaissance while maximizing collected information.
 
 **Figure 15.1 — Enum4Linux Complete Enumeration Output**
 
-> Insert screenshot showing the complete Enum4Linux terminal output.
+![Figure 15.1 — Enum4Linux Complete Enumeration Output](../Screenshots/12-Enum4Linux%20Complete%20Enumeration%20Output.png)
 
 ---
 
@@ -1053,7 +1053,7 @@ Anonymous shares are often unintentionally exposed and may allow attackers to re
 
 **Figure 16.1 — SMB Shares Identified**
 
-> Insert screenshot highlighting the Anonymous share in Enum4Linux output.
+![Figure 16.1 — SMB Shares Identified](../Screenshots/13-SMB%20Shares%20Identified.png)
 
 ---
 
@@ -1095,7 +1095,7 @@ This eliminated guesswork for future authentication attempts.
 
 **Figure 16.2 — User Enumeration Results**
 
-> Insert screenshot showing usernames discovered by Enum4Linux.
+![Figure 16.2 — User Enumeration Results](../Screenshots/14-User%20Enumeration%20Results.png)
 
 ---
 
@@ -1163,7 +1163,7 @@ This confirmed anonymous access was enabled.
 
 **Figure 17.1 — Successful Anonymous SMB Login**
 
-> Insert screenshot showing successful connection to the Anonymous share.
+![Figure 17.1 — Successful Anonymous SMB Login](../Screenshots/15-Successful%20Anonymous%20SMB%20Login.png)
 
 ---
 
@@ -1203,7 +1203,7 @@ This became the primary target for download.
 
 **Figure 18.1 — Contents of Anonymous SMB Share**
 
-> Insert screenshot showing the output of the `dir` command.
+![Figure 18.1 — Contents of Anonymous SMB Share](../Screenshots/16-Contents%20of%20Anonymous%20SMB%20Share.png)
 
 ---
 
@@ -1293,7 +1293,7 @@ Even without passwords, usernames dramatically reduce attack complexity.
 
 **Figure 19.1 — Contents of `staff.txt`**
 
-> Insert screenshot showing usernames inside `staff.txt`.
+![Figure 19.1 — Contents of staff.txt](../Screenshots/18-Contents%20of%20staff.txt.png)
 
 ---
 
@@ -1530,7 +1530,7 @@ A valid SSH credential was identified for the user **jan**.
 
 **Figure 26.1 — Hydra Successfully Identifies Valid SSH Credentials**
 
-> Insert screenshot highlighting Hydra's success message.
+![Figure 26.1 — Hydra Successful Authentication](../Screenshots/20-Hydra%20Successful%20Authentication.png)
 
 ---
 
@@ -1620,7 +1620,7 @@ This marked the completion of the **Initial Access** phase.
 
 **Figure 27.1 — Successful SSH Login as `jan`**
 
-> Insert screenshot showing the terminal prompt after logging into the target machine.
+![Figure 27.1 — Successful SSH Login as jan](../Screenshots/21-Successful%20SSH%20Login%20as%20jan.png)
 
 ---
 
@@ -1669,7 +1669,7 @@ This verification ensured that all subsequent enumeration activities were perfor
 
 **Figure 28.1 — Verifying Current User**
 
-> Insert screenshot showing output of `whoami`.
+![Figure 28.1 — Verifying Current User](../Screenshots/22-Verifying%20Current%20User.png)
 
 ---
 
@@ -1748,7 +1748,7 @@ Helps identify:
 
 **Figure 29.1 — Contents of `/etc/passwd`**
 
-> Insert screenshot showing the `/etc/passwd` output.
+![Figure 29.1 — Contents of etc-passwd](../Screenshots/23-Contents%20of%20etc-passwd.png)
 
 ---
 
@@ -1824,7 +1824,7 @@ The next logical step was to inspect the `kay` home directory because it belonge
 
 **Figure 30.1 — Listing `/home` Directory**
 
-> Insert screenshot showing available user directories.
+![Figure 31.1 — ls -la home-kay](../Screenshots/24-ls%20-la%20home-kay.png)
 
 ---
 
@@ -1879,7 +1879,7 @@ This command is fundamental during Linux privilege escalation.
 
 **Figure 31.1 — File Permission Enumeration in `/home/kay`**
 
-> Insert screenshot showing `ls -la` output.
+![Figure 31.1 — ls -la home-kay](../Screenshots/24-ls%20-la%20home-kay.png)
 
 ---
 
@@ -1935,13 +1935,6 @@ This indicated:
 
 This suggested the file contained sensitive information worth targeting during privilege escalation.
 
----
-
-### 📷 Screenshot Placeholder
-
-**Figure 32.1 — Permission Denied While Reading `pass.bak`**
-
-> Insert screenshot showing the permission denied message.
 
 ---
 
@@ -2198,7 +2191,7 @@ The `.ssh` directory immediately became the highest-priority target because SSH 
 
 **Figure 38.1 — Enumeration of `/home/kay`**
 
-> Insert screenshot showing all files listed.
+![Figure 31.1 — ls -la home-kay](../Screenshots/24-ls%20-la%20home-kay.png)
 
 ---
 
@@ -2257,7 +2250,7 @@ This suggested an opportunity for **offline password cracking** instead of onlin
 
 **Figure 39.1 — Contents of `.ssh` Directory**
 
-> Insert screenshot showing the files inside `.ssh`.
+![Figure 39.1 — Contents of ssh Directory](../Screenshots/25-Contents%20of%20ssh%20Directory.png)
 
 ---
 
@@ -2352,7 +2345,7 @@ Instead, the private key needed to be copied locally for offline analysis.
 
 **Figure 42.1 — Encrypted OpenSSH Private Key**
 
-> Insert screenshot showing only the beginning of the private key header (avoid exposing the full key in GitHub).
+![Figure 42.1 — Encrypted OpenSSH Private Key](../Screenshots/26-Encrypted%20OpenSSH%20Private%20Key.png)
 
 ---
 
@@ -2392,7 +2385,7 @@ This file served as the input for offline password cracking.
 
 **Figure 43.1 — Private Key Saved Locally**
 
-> Insert screenshot showing the local file containing the SSH private key.
+![Figure 43.2 — chmod 400 bp](../Screenshots/27-chmod%20400%20bp.png)
 
 ---
 
@@ -2648,7 +2641,7 @@ This confirmed that John the Ripper was installed correctly on Kali Linux and in
 
 **Figure 49.1 — Locating `ssh2john.py`**
 
-> Insert screenshot showing the path returned by `locate`.
+![Figure 49.1 — Locating ssh2john.py](../Screenshots/28-Locating%20ssh2john.py.png)
 
 ---
 
@@ -2698,7 +2691,7 @@ Advantages:
 
 **Figure 50.1 — SSH Key Converted into Hash Format**
 
-> Insert screenshot showing successful execution of `ssh2john.py`.
+![Figure 50.1 — SSH Key Converted into Hash Format](../Screenshots/29-SSH%20Key%20Converted%20into%20Hash%20Format.png)
 
 ---
 
@@ -2799,7 +2792,7 @@ A valid passphrase protecting the encrypted private key was recovered.
 
 **Figure 53.1 — Successful Passphrase Recovery**
 
-> Insert screenshot highlighting John's success message.
+![Figure 53.1 — Passphrase Recovered](../Screenshots/32-Passphrase%20Recovered.png)
 
 ---
 
@@ -2893,7 +2886,7 @@ A new shell session opened under the account **kay**.
 
 **Figure 54.1 — Successful SSH Authentication Using Private Key**
 
-> Insert screenshot showing login as `kay`.
+![Figure 54.1 — SSH Login as kay](../Screenshots/33-SSH%20Login%20as%20kay.png)
 
 ---
 
@@ -3233,7 +3226,7 @@ These files are frequently forgotten during security reviews.
 
 **Figure 63.1 — Contents of `pass.bak`**
 
-> Insert screenshot of the file contents. If publishing publicly, redact the credential value.
+![Figure 63.1 — Final Credential File Redacted](../Screenshots/36-Final%20Credential%20File%20Redacted.png)
 
 ---
 
